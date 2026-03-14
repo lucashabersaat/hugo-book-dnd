@@ -8,7 +8,7 @@
   {{ $prev := $pages.Next $ }}
   {{ $next := $pages.Prev $ }}
 
-  {{- if or $prev $next }}
+  {{- if and .Site.Params.NextPrevEnabled (or $prev $next) }}
   <div class="flex flex-wrap justify-between">
     <span>
     {{ with $prev }}

@@ -421,6 +421,25 @@ body[dir="rtl"] .book-menu {
   }
 }
 
+.landing-hero {
+  display: flex;
+  flex-direction: column;
+  gap: $padding-16 * 2;
+  align-items: center;
+
+  @media (min-width: 36rem) {
+    flex-direction: row;
+    align-items: flex-start;
+  }
+}
+
+.landing-hero-image {
+  width: 100%;
+  max-width: var(--landing-logo-size);
+  height: auto;
+  flex-shrink: 0;
+}
+
 // Extra space for big screens
 @media screen and (min-width: $container-max-width) {
   .book-page,

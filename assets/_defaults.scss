@@ -7,7 +7,7 @@ $padding-16: 1rem !default;
 $body-min-width: 20rem !default;
 $container-max-width: 80rem !default;
 
-$menu-width: 16rem !default;
+$menu-width: 19rem !default;
 $toc-width: 16rem !default;
 
 $mobile-breakpoint: $menu-width + $body-min-width * 1.2 + $toc-width !default;
@@ -23,6 +23,8 @@ $mobile-breakpoint: $menu-width + $body-min-width * 1.2 + $toc-width !default;
   --body-font-color: black;
 
   --border-radius: 0.25rem;
+
+  --landing-logo-size: 5rem;
 }
 
 // Themes

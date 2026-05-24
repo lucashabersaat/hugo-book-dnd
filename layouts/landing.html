@@ -12,4 +12,17 @@
 <nav>
   {{ partial "docs/menu-hugo" (dict "Page" .Page "Menu" .Site.Menus.home) }}
 </nav>
+
+{{ end }}
+
+{{ define "main" }}
+<div class="landing-hero">
+  {{- with .Site.Params.BookLogo -}}
+  <img class="landing-hero-image" src="{{ . | relURL }}" alt="{{ partial "docs/text/i18n" "Logo" }}" />
+  {{- end -}}
+
+  <article class="markdown book-article">
+    {{- .Content -}}
+  </article>
+</div>
 {{ end }}
